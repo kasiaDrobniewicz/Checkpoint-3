@@ -41,4 +41,17 @@ public class BookView {
         return book;
     }
 
+    public static void displayBookData(BookModel book) {
+        System.out.println(book.getISBN() + " " + book.getAutor() + " " +
+                book.getTitle() + " " + book.getPublisher() + " " + String.valueOf(book.getPublisherYear()));
+    }
+
+    public static int getBookISBN() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please choose the ISBN of the book you want to update: ");
+        int ISBN = scanner.nextInt();
+
+        return ISBN;
+    }
 }
