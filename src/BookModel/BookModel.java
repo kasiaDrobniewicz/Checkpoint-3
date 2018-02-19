@@ -7,7 +7,7 @@ public abstract class BookModel {
     private String publisher;
     private int publisherYear;
     private int price;
-    private int type;
+    private String type;
 
     public BookModel() {
         this.ISBN = 0;
@@ -16,11 +16,11 @@ public abstract class BookModel {
         this.publisher = null;
         this.publisherYear = 0;
         this.price = 0;
-        this.type = 0;
+        this.type = null;
     }
 
 
-    public BookModel(int ISBN, String autor, String title, String publisher, int publisherYear, int price, int type) {
+    public BookModel(int ISBN, String autor, String title, String publisher, int publisherYear, int price, String type) {
         this.ISBN = ISBN;
         this.autor = autor;
         this.title = title;
