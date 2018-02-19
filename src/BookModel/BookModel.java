@@ -1,6 +1,6 @@
 package BookModel;
 
-public abstract class BookModel {
+public class BookModel {
     private int ISBN;
     private String autor;
     private String title;
