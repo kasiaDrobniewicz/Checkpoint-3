@@ -22,6 +22,7 @@ public class Application {
                     bookController.addBook();
                     break;
                 case 2:
+                    bookController.updateBook();
                     break;
 
                 case 3:
