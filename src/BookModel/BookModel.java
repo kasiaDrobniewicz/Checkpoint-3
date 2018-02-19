@@ -29,4 +29,73 @@ public abstract class BookModel {
         this.price = price;
         this.type = type;
     }
+
+    public int getISBN() {
+        return ISBN;
+    }
+
+    public void setISBN(int ISBN) {
+        this.ISBN = ISBN;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getPublisher() {
+        return publisher;
+    }
+
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
+    }
+
+    public int getPublisherYear() {
+        return publisherYear;
+    }
+
+    public void setPublisherYear(int publisherYear) {
+        this.publisherYear = publisherYear;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "BookModel{" +
+                "ISBN=" + ISBN +
+                ", autor='" + autor + '\'' +
+                ", title='" + title + '\'' +
+                ", publisher='" + publisher + '\'' +
+                ", publisherYear=" + publisherYear +
+                ", price=" + price +
+                ", type='" + type + '\'' +
+                '}';
+    }
 }
